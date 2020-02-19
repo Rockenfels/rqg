@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+$Casablanca-1-rgba: rgba(1,35,58, 1);
+$Casablanca-2-rgba: rgba(28,75,86, 1);
+$Casablanca-3-rgba: rgba(207,177,117, 1);
+$Casablanca-4-rgba: rgba(184,94,33, 1);
+$Casablanca-5-rgba: rgba(107,8,3, 1);
+
+@function randomColor() {
+  $value1: random(255);
+  $value2: random(255);
+  $value3: random(255);
+  $result: rgba($value1, $value2, $value3, 1);
+
+  @return $result;
+}
+
+$random-rgba: randomColor();
