@@ -25,7 +25,7 @@ class App extends React.Component {
 }
 const mapState = (state) => {
   const { quote, author } = state;
-  return {quote, author};
+  return { quote, author };
 }
 
 const mapDispatchToProps = dispatch => bindActionCreators(
